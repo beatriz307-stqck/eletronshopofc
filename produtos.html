@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EletronShop - Produtos</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-produtos">
+  <!-- CABEÇALHO COMPARTILHADO COM A HOME -->
+  <header class="cabecalho-principal">
+    <div class="header-container container">
+      <nav class="nav-links">
+        <a href="#" class="icone-menu-hamburguer"><img src="assets/compartilhados/iconmenu.png" alt="Menu"></a>
+        <a href="index.html">Home</a>
+        <a href="produtos.html" class="ativo">Produtos</a>
+        <a href="ofertas.html">Ofertas</a>
+        <a href="maisvendidos.html">Mais Vendidos</a>
+      </nav>
+      <div class="logo-area"><a href="index.html"><img src="assets/compartilhados/logo.png" alt="EletronShop Logo"></a></div>
+      <div class="acoes-usuario">
+        <div class="caixa-pesquisa"><input type="text" placeholder="O que você está procurando?"><button class="icone-pesquisa" aria-label="Buscar">🔍</button></div>
+        <a href="#" class="icone-btn"><img src="assets/compartilhados/iconacessibilidade.png" alt="Acessibilidade"></a>
+        <a href="#" class="icone-btn"><img src="assets/compartilhados/iconcarrinho.png" alt="Carrinho"></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- BANNER PRINCIPAL DO FIGMA-->
+  <section class="banner-figma-produtos" aria-label="Ofertas especiais">
+    <div class="banner-figma-conteudo">
+      <p class="banner-figma-etiqueta">OFERTAS ESPECIAIS</p>
+      <h1>PRODUTOS EM DESTAQUE</h1>
+      <p class="banner-figma-descricao">
+        Tecnologia, desempenho e melhores ofertas<br>
+        em um só lugar!
+      </p>
+      <a class="banner-figma-botao" href="ofertas.html">
+        VER TODAS AS OFERTAS ↗️
+      </a>
+    </div>
+  </section>
+
+  <!-- CONTEÚDO PRINCIPAL (LAYOUT COM BARRA LATERAL + VITRINE) -->
+  <main class="container layout-produtos" style="margin-top: 30px; display: flex; gap: 30px;">
+    
+    <!-- BARRA LATERAL DE FILTROS E CATEGORIAS -->
+    <aside class="painel-filtros" style="width: 280px; flex-shrink: 0;">
+      <!-- BLOCO CATEGORIAS -->
+      <div class="bloco-filtro">
+        <h3 style="color: #fff; margin-bottom: 15px;">Categorias</h3>
+        <ul class="lista-categorias" style="list-style: none; padding: 0;">
+          <li><a href="produtos.html"><img src="assets/produtos/prod-icon-laptop.png" alt=""> Notebooks</a></li>
+          <li><a href="produtos.html"><img src="assets/produtos/prod-icon-console.png" alt=""> Consoles</a></li>
+          <li><a href="produtos.html"><img src="assets/produtos/prod-icon-pc.png" alt=""> PC gamer</a></li>
+          <li><a href="produtos.html"><img src="assets/produtos/prod-icon-phone.png" alt=""> Smartphones</a></li>
+          <li><a href="produtos.html"><img src="assets/produtos/prod-icon-tv.png" alt=""> TVs e Áudio</a></li>
+          <li><a href="produtos.html"><img src="assets/produtos/prod-icon-componente.png" alt=""> Componentes</a></li>
+          <li><a href="produtos.html"><img src="assets/produtos/prod-icon-perifericos.png" alt=""> Periféricos</a></li>
+          <li><a href="produtos.html"><img src="assets/produtos/prod-icon-acessorios.png" alt=""> Acessórios</a></li>
+        </ul>
+      </div>
+      <hr style="border-color: #2a3a5e; margin: 20px 0;">
+
+      <!-- BLOCO FILTROS DE PREÇO -->
+      <div class="bloco-filtro">
+        <h3 style="color: #fff; margin-bottom: 15px;">Filtros</h3>
+        <h4 style="color: var(--cinza-texto); margin-bottom: 10px;">Preço</h4>
+        <label><input type="checkbox"> Até R$ 1.000</label><br>
+        <label><input type="checkbox"> R$ 1.000 - R$ 2.000</label><br>
+        <label><input type="checkbox"> R$ 2.000 - R$ 3.000</label><br>
+        <label><input type="checkbox"> R$ 3.000 - R$ 5.000</label><br>
+        <label><input type="checkbox"> Acima de R$ 5.000</label>
+      </div>
+
+      <!-- BLOCO FILTROS DE MARCA -->
+      <div class="bloco-filtro" style="margin-top: 20px;">
+        <h4 style="color: var(--cinza-texto); margin-bottom: 10px;">Marca</h4>
+        <label><input type="checkbox"> Samsung</label><br>
+        <label><input type="checkbox"> Apple</label><br>
+        <label><input type="checkbox"> Asus</label><br>
+        <label><input type="checkbox"> Acer</label><br>
+        <label><input type="checkbox"> Dell</label><br>
+        <label><input type="checkbox"> JBL</label><br>
+        <label><input type="checkbox"> Intel</label><br>
+        <label><input type="checkbox"> Hyper</label>
+      </div>
+    </aside>
+
+    <!-- SEÇÃO DA VITRINE -->
+    <section class="vitrine-conteudo" style="flex-grow: 1;">
+      <div class="catalogo-topo" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; gap: 15px;">
+        <div class="caixa-busca-vitrine" style="flex-grow: 1;">
+          <input type="text" placeholder="Buscar produtos..." style="width: 100%; padding: 10px 15px; border-radius: 8px; border: 1px solid #1a2b4c; background-color: #04142c; color: #fff;">
+        </div>
+        <div class="seletor-ordenacao">
+          <select style="padding: 10px 15px; border-radius: 8px; border: 1px solid #1a2b4c; background-color: #04142c; color: #fff; cursor: pointer;">
+            <option>Ordenar por: Mais Vendidos</option>
+            <option>Menor Preço</option>
+            <option>Maior Preço</option>
+            <option>Melhores Avaliações</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- GRADE DE PRODUTOS (3 COLUNAS) -->
+      <div class="grid-produtos-catalogo">
+        <article class="card-produto">
+          <img src="assets/produtos/prod-notebook.png" alt="Notebook Samsung">
+          <h4>Notebook Samsung Galaxy Book2</h4>
+          <div class="avaliacao">⭐⭐⭐⭐⭐ (4.8)</div>
+          <p class="preco-atual">R$ 3.569,90</p>
+          <p class="preco-antigo">R$ 5.099,00</p>
+        </article>
+        <article class="card-produto">
+          <img src="assets/produtos/prod-headset.png" alt="Headset Gamer">
+          <h4>Headset Gamer HyperX Cloud II</h4>
+          <div class="avaliacao">⭐⭐⭐⭐⭐ (4.7)</div>
+          <p class="preco-atual">R$ 549,00</p>
+          <p class="preco-antigo">R$ 799,00</p>
+        </article>
+        <article class="card-produto">
+          <img src="assets/produtos/prod-galaxy.png" alt="Smartphone Samsung">
+          <h4>Smartphone Samsung Galaxy A54</h4>
+          <div class="avaliacao">⭐⭐⭐⭐⭐ (4.6)</div>
+          <p class="preco-atual">R$ 1.899,00</p>
+          <p class="preco-antigo">R$ 2.499,00</p>
+        </article>
+        <article class="card-produto">
+          <img src="assets/produtos/prod-ps5.png" alt="PlayStation 5">
+          <h4>Playstation 5 Slim</h4>
+          <div class="avaliacao">⭐⭐⭐⭐⭐ (4.9)</div>
+          <p class="preco-atual">R$ 3.699,00</p>
+          <p class="preco-antigo">R$ 4.299,00</p>
+        </article>
+        <article class="card-produto">
+          <img src="assets/produtos/prod-monitor (2).png" alt="Monitor Gamer">
+          <h4>Monitor Gamer AOC</h4>
+          <div class="avaliacao">⭐⭐⭐⭐⭐ (4.8)</div>
+          <p class="preco-atual">R$ 999,90</p>
+          <p class="preco-antigo">R$ 1.399,00</p>
+        </article>
+        <article class="card-produto">
+          <img src="assets/produtos/prod-teclado.png" alt="Teclado Mecânico">
+          <h4>Teclado Mecânico Redragon Kumara</h4>
+          <div class="avaliacao">⭐⭐⭐⭐⭐ (4.9)</div>
+          <p class="preco-atual">R$ 229,00</p>
+          <p class="preco-antigo">R$ 329,00</p>
+        </article>
+        <article class="card-produto">
+          <img src="assets/produtos/prod-mouse.png" alt="Mouse Gamer">
+          <h4>Mouse Gamer Logitech G502</h4>
+          <div class="avaliacao">⭐⭐⭐⭐⭐ (4.8)</div>
+          <p class="preco-atual">R$ 349,00</p>
+          <p class="preco-antigo">R$ 499,00</p>
+        </article>
+        <article class="card-produto">
+          <img src="assets/produtos/prod-king.png" alt="SSD Kingston">
+          <h4>SSD Kingston 1TB</h4>
+          <div class="avaliacao">⭐⭐⭐⭐⭐ (4.8)</div>
+          <p class="preco-atual">R$ 459,00</p>
+          <p class="preco-antigo">R$ 699,00</p>
+        </article>
+        <article class="card-produto">
+          <img src="assets/produtos/prod-cadeira.png" alt="Cadeira Gamer">
+          <h4>Cadeira Gamer TGC12</h4>
+          <div class="avaliacao">⭐⭐⭐⭐⭐ (4.7)</div>
+          <p class="preco-atual">R$ 899,00</p>
+          <p class="preco-antigo">R$ 1.200,00</p>
+        </article>
+      </div>
+
+      <!-- PAGINAÇÃO INTERATIVA -->
+      <div class="paginacao" style="display: flex; gap: 8px; margin-top: 30px; justify-content: center;">
+        <a href="produtos.html" class="pagina-btn ativa">1</a>
+        <a href="produtos2.html" class="pagina-btn">2</a>
+        <a href="produtos3.html" class="pagina-btn">3</a>
+        <a href="produtos4.html" class="pagina-btn">4</a>
+        <a href="produtos2.html" class="pagina-btn">❯</a>
+      </div>
+    </section>
+  </main>
+      <br> <br> <br> <br> 
+       
+  <!-- BANNER FRETE GRÁTIS -->
+  <section class="banner-frete-produtos">
+    <img src="assets/produtos/bannerfrete.png" alt="Entrega de produtos EletronShop">
+    <div class="texto-banner-frete">
+    </div>
+  </section>
+
+  <!-- RODAPÉ (FOOTER) -->
+ <!-- RODAPÉ COMPLETO -->
+<footer class="rodape-principal" style="background-color: #030e21; border-top: 1px solid #1a2b4c; padding: 50px 0 20px; margin-top: 40px;">
+
+    <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 30px;">
+
+        <!-- LOGO E MARCA -->
+        <div style="display: flex; align-items: center; gap: 15px;">
+            <img src="assets/compartilhados/logo.png"
+                 alt="Eletron Shop"
+                 style="width: 70px;">
+
+            <div>
+                <h3 style="color: #fff; margin: 0; font-size: 1.1rem;">
+                    ELETRON SHOP
+                </h3>
+                <p style="color: #8a99ad; margin-top: 5px; font-size: 0.85rem;">
+                    Tecnologia que conecta você.
+                </p>
+            </div>
+        </div>
+
+        <!-- ATENDIMENTO -->
+        <div>
+            <h4 style="color: #fff; margin-bottom: 12px; font-size: 0.95rem;">
+                Atendimento
+            </h4>
+
+            <ul style="list-style: none; padding: 0; color: #8a99ad; font-size: 0.85rem; line-height: 1.8;">
+                <li><a href="#" style="color: #8a99ad; text-decoration: none;">Fale conosco</a></li>
+                <li><a href="#" style="color: #8a99ad; text-decoration: none;">Perguntas e sugestões</a></li>
+                <li><a href="#" style="color: #8a99ad; text-decoration: none;">Suporte e Descrições</a></li>
+            </ul>
+        </div>
+
+        <!-- REDES SOCIAIS -->
+        <div>
+            <h4 style="color: #fff; margin-bottom: 12px; font-size: 0.95rem;">
+                Redes Sociais
+            </h4>
+
+            <div style="display: flex; gap: 12px; align-items: center;">
+                <a href="#"><img src="assets/compartilhados/iconinsta.png" alt="Instagram" style="width: 24px; height: 24px;"></a>
+                <a href="#"><img src="assets/compartilhados/iconfacebook.png" alt="Facebook" style="width: 24px; height: 24px;"></a>
+                <a href="#"><img src="assets/compartilhados/iconlinkedin.png" alt="LinkedIn" style="width: 24px; height: 24px;"></a>
+                <a href="#"><img src="assets/compartilhados/icontiktok.png" alt="TikTok" style="width: 24px; height: 24px;"></a>
+            </div>
+        </div>
+
+        <!-- FORMAS DE PAGAMENTO -->
+        <div>
+            <h4 style="color: #fff; margin-bottom: 12px; font-size: 0.95rem;">
+                Formas de pagamento
+            </h4>
+
+            <div style="display: flex; gap: 10px; align-items: center;">
+                <img src="assets/compartilhados/pagamento-visa.png" alt="Visa" style="height: 22px;">
+                <img src="assets/compartilhados/pagamento-mastercard.png" alt="Mastercard" style="height: 22px;">
+                <img src="assets/compartilhados/pagamento-pix.png" alt="Pix" style="height: 22px;">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- DIREITOS AUTORAIS -->
+    <div style="text-align: center; border-top: 1px solid #11223f; margin-top: 40px; padding-top: 20px; color: #5a6a80; font-size: 0.8rem;">
+        ©2026 EletronShop. Todos os direitos reservados.
+    </div>
+
+</footer>
+</body>
+</html>

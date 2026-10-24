@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EletronShop - Produtos (Página 2)</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-produtos2">
+
+  <!-- CABEÇALHO NO PADRÃO DA PÁGINA PRINCIPAL -->
+  <header class="cabecalho-principal">
+    <div class="header-container container">
+      <nav class="nav-links">
+        <a href="#" class="icone-menu-hamburguer"><img src="assets/compartilhados/iconmenu.png" alt="Menu"></a>
+        <a href="index.html">Home</a>
+        <a href="produtos.html" class="ativo">Produtos</a>
+        <a href="ofertas.html">Ofertas</a>
+        <a href="maisvendidos.html">Mais Vendidos</a>
+      </nav>
+      <div class="logo-area">
+        <a href="index.html"><img src="assets/compartilhados/logo.png" alt="EletronShop Logo"></a>
+      </div>
+      <div class="acoes-usuario">
+        <div class="caixa-pesquisa">
+          <input type="text" placeholder="O que você está procurando?">
+          <button class="icone-pesquisa" aria-label="Buscar">🔍</button>
+        </div>
+        <a href="#" class="icone-btn"><img src="assets/compartilhados/iconacessibilidade.png" alt="Acessibilidade"></a>
+        <a href="#" class="icone-btn"><img src="assets/compartilhados/iconcarrinho.png" alt="Carrinho"></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main class="container layout-produtos" style="margin-top: 30px; display: flex; gap: 30px;">
+
+    <!-- BARRA LATERAL (SIDEBAR) -->
+    <aside class="sidebar-filtros" style="width: 250px; flex-shrink: 0;">
+      <!-- Categorias -->
+      <div class="bloco-filtro" style="margin-bottom: 25px;">
+        <h3 style="font-size: 1.1rem; margin-bottom: 12px; color: #fff;">Categorias</h3>
+        <ul style="list-style: none; padding: 0; color: #8a99ad; line-height: 2;">
+          <li><a href="#" style="color: #8a99ad; text-decoration: none;">Eletrônicos</a></li>
+          <li><a href="#" style="color: #8a99ad; text-decoration: none;">Informática</a></li>
+          <li><a href="#" style="color: #8a99ad; text-decoration: none;">Smartphones</a></li>
+          <li><a href="#" style="color: #8a99ad; text-decoration: none;">Áudio e Vídeo</a></li>
+        </ul>
+      </div>
+
+      <!-- Marcas (8 marcas) -->
+      <div class="bloco-filtro" style="margin-bottom: 25px;">
+        <h3 style="font-size: 1.1rem; margin-bottom: 12px; color: #fff;">Marcas</h3>
+        <ul style="list-style: none; padding: 0; color: #8a99ad; line-height: 2;">
+          <li><label><input type="checkbox"> JBL</label></li>
+          <li><label><input type="checkbox"> Apple</label></li>
+          <li><label><input type="checkbox"> Samsung</label></li>
+          <li><label><input type="checkbox"> Sony</label></li>
+          <li><label><input type="checkbox"> LG</label></li>
+          <li><label><input type="checkbox"> Logitech</label></li>
+          <li><label><input type="checkbox"> HyperX</label></li>
+          <li><label><input type="checkbox"> Dell</label></li>
+        </ul>
+      </div>
+
+      <!-- Preço -->
+      <div class="bloco-filtro">
+        <h3 style="font-size: 1.1rem; margin-bottom: 12px; color: #fff;">Faixa de Preço</h3>
+        <input type="range" min="0" max="5000" style="width: 100%;">
+      </div>
+    </aside>
+
+    <!-- SEÇÃO DA VITRINE -->
+    <section class="vitrine-conteudo" style="flex-grow: 1;">
+      
+      <!-- BARRA DE BUSCA DA VITRINE E ORDENAÇÃO -->
+      <div class="catalogo-topo" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; gap: 15px;">
+        <div class="caixa-busca-vitrine" style="flex-grow: 1;">
+          <input type="text" placeholder="Buscar produtos..." style="width: 100%; padding: 10px 15px; border-radius: 8px; border: 1px solid #1a2b4c; background-color: #04142c; color: #fff;">
+        </div>
+          <div class="seletor-ordenacao">
+          <select style="padding: 10px 15px; border-radius: 8px; border: 1px solid #1a2b4c; background-color: #04142c; color: #fff; cursor: pointer;">
+            <option>Ordenar por: Mais Vendidos</option>
+            <option>Menor Preço</option>
+            <option>Maior Preço</option>
+            <option>Melhores Avaliações</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- GRADE DE PRODUTOS -->
+      <div class="grid-produtos-catalogo">
+
+        <!-- Produto 10 -->
+        <article class="card-produto">
+          <img src="assets/produtos2/prod2-monitorgamer(2).png" alt="Monitor Gamer 144Hz">
+          <h4>Monitor Gamer 24" 144Hz</h4>
+          <div class="avaliacao">⭐⭐⭐⭐⭐ (4.9)</div>
+          <p class="preco-atual">R$ 1.199,00</p>
+          <p class="preco-antigo">R$ 1.599,00</p>
+        </article>
+
+        <!-- Produto 11 -->
+        <article class="card-produto">
+          <img src="assets/produtos2/prod2-tecladomecanico.png" alt="Teclado Mecânico RGB">
+          <h4>Teclado Mecânico RGB Switch Blue</h4>
+          <div class="avaliacao">⭐⭐⭐⭐ (4.6)</div>
+          <p class="preco-atual">R$ 289,00</p>
+          <p class="preco-antigo">R$ 399,00</p>
+        </article>
+
+        <!-- Produto 12 -->
+        <article class="card-produto">
+          <img src="assets/produtos2/prod2-fone.png" alt="Headset Gamer 7.1">
+          <h4>Headset Gamer Surround 7.1</h4>
+          <div class="avaliacao">⭐⭐⭐⭐⭐ (4.8)</div>
+          <p class="preco-atual">R$ 349,00</p>
+          <p class="preco-antigo">R$ 450,00</p>
+        </article>
+
+        <!-- Produto 13 -->
+        <article class="card-produto">
+          <img src="assets/produtos2/prod-webcam.png" alt="Webcam Full HD 1080p">
+          <h4>Webcam Full HD 1080p com Microfone</h4>
+          <div class="avaliacao">⭐⭐⭐⭐ (4.5)</div>
+          <p class="preco-atual">R$ 199,00</p>
+          <p class="preco-antigo">R$ 299,00</p>
+        </article>
+
+       <!-- Produto 14 -->
+        <article class="card-produto">
+          <img src="assets/produtos2/prod2-caixasom.png" alt="Caixa de Som Bluetooth">
+          <h4>Caixa de Som Bluetooth à Prova D'água</h4>
+          <div class="avaliacao">⭐⭐⭐⭐⭐ (4.9)</div>
+          <p class="preco-atual">R$ 399,00</p>
+          <p class="preco-antigo">R$ 520,00</p>
+        </article>
+
+         <!-- Produto 15 -->
+        <article class="card-produto">
+          <img src="assets/produtos2/prod2-placavideo.png" alt="Placa de Vídeo RTX 3060">
+          <h4>Placa de Vídeo RTX 3060 12GB</h4>
+          <div class="avaliacao">⭐⭐⭐⭐⭐ (5.0)</div>
+          <p class="preco-atual">R$ 1.899,00</p>
+          <p class="preco-antigo">R$ 2.499,00</p>
+        </article>
+
+        <!-- Produto 16 -->
+        <article class="card-produto">
+          <img src="assets/produtos2/prod2-processador.png" alt="Processador Intel i7">
+          <h4>Processador Intel Core i7 12ª Geração</h4>
+          <div class="avaliacao">⭐⭐⭐⭐⭐ (4.8)</div>
+          <p class="preco-atual">R$ 1.649,00</p>
+          <p class="preco-antigo">R$ 2.100,00</p>
+        </article>
+
+         <!-- Produto 17 -->
+        <article class="card-produto">
+          <img src="assets/produtos2/prod2-memoriaram.jpg" alt="Memória RAM 16GB DDR4">
+          <h4>Memória RAM 16GB DDR4 3200MHz</h4>
+          <div class="avaliacao">⭐⭐⭐⭐ (4.7)</div>
+          <p class="preco-atual">R$ 279,00</p>
+          <p class="preco-antigo">R$ 380,00</p>
+        </article>
+
+         <!-- Produto 18 -->
+        <article class="card-produto">
+          <img src="assets/produtos2/prod2-fonte.png" alt="Fonte 650W 80 Plus Gold">
+          <h4>Fonte 650W 80 Plus Gold Modular</h4>
+          <div class="avaliacao">⭐⭐⭐⭐⭐ (4.8)</div>
+          <p class="preco-atual">R$ 489,00</p>
+          <p class="preco-antigo">R$ 620,00</p>
+        </article>
+
+      </div> <!-- fim da grid-produtos-catalogo -->
+
+      <!-- PAGINAÇÃO INTERATIVA (PÁGINA 2 ATIVA) -->
+      <div class="paginacao" style="display: flex; gap: 8px; margin-top: 30px; justify-content: center;">
+        <a href="produtos.html" class="pagina-btn">1</a>
+        <a href="produtos2.html" class="pagina-btn ativa">2</a>
+        <a href="produtos3.html" class="pagina-btn">3</a>
+        <a href="produtos4.html" class="pagina-btn">4</a>
+        <a href="produtos3.html" class="pagina-btn">❯</a>
+      </div>
+      
+    </section>
+
+  </main>
+  
+  <!-- 7. RODAPÉ COMPLETO -->
+  <footer class="rodape-principal" style="background-color: #030e21; border-top: 1px solid #1a2b4c; padding: 50px 0 20px 0;">
+    <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 30px;">
+         
+      <!-- LOGO E MARCA -->
+      <div style="display: flex; align-items: center; gap: 15px;">
+        <img src="assets/compartilhados/logo.png" alt="Eletron Shop" style="width: 70px;">
+        <div>
+          <h3 style="color: #fff; margin: 0; font-size: 1.1rem;">ELETRON SHOP</h3>
+          <p style="color: #8a99ad; margin-top: 5px; font-size: 0.85rem;">Tecnologia que conecta você.</p>
+        </div>
+      </div>
+
+            <!-- ATENDIMENTO -->
+      <div>
+        <h4 style="color: #fff; margin-bottom: 12px; font-size: 0.95rem;">Atendimento</h4>
+        <ul style="list-style: none; padding: 0; color: #8a99ad; font-size: 0.85rem; line-height: 1.8;">
+          <li><a href="#" style="color: #8a99ad; text-decoration: none;">Fale conosco</a></li>
+          <li><a href="#" style="color: #8a99ad; text-decoration: none;">Perguntas e sugestões</a></li>
+          <li><a href="#" style="color: #8a99ad; text-decoration: none;">Suporte e Descrições</a></li>
+        </ul>
+      </div>
+
+            <!-- REDES SOCIAIS COM OS ICONS -->
+      <div>
+        <h4 style="color: #fff; margin-bottom: 12px; font-size: 0.95rem;">Redes Sociais</h4>
+        <div style="display: flex; gap: 12px; align-items: center;">
+          <a href="#"><img src="assets/compartilhados/iconinsta.png" alt="Instagram" style="width: 24px; height: 24px;"></a>
+          <a href="#"><img src="assets/compartilhados/iconfacebook.png" alt="Facebook" style="width: 24px; height: 24px;"></a>
+          <a href="#"><img src="assets/compartilhados/iconlinkedin.png" alt="LinkedIn" style="width: 24px; height: 24px;"></a>
+          <a href="#"><img src="assets/compartilhados/icontiktok.png" alt="Tiktok" style="width: 24px; height: 24px;"></a>
+        </div>
+      </div>
+
+       <!-- FORMAS DE PAGAMENTO -->
+      <div>
+        <h4 style="color: #fff; margin-bottom: 12px; font-size: 0.95rem;">Formas de pagamento</h4>
+        <div style="display: flex; gap: 10px; align-items: center;">
+          <img src="assets/compartilhados/pagamento-visa.png" alt="Visa" style="height: 22px;">
+          <img src="assets/compartilhados/pagamento-mastercard.png" alt="Mastercard" style="height: 22px;">
+          <img src="assets/compartilhados/pagamento-pix.png" alt="Outro Pagamento" style="height: 22px;">
+        </div>
+      </div>
+
+    </div>
+<!-- COPYRIGHT -->
+    <div style="text-align: center; border-top: 1px solid #11223f; margin-top: 40px; padding-top: 20px; color: #5a6a80; font-size: 0.8rem;">
+      ©2026 EletronShop. Todos os direitos reservados.
+    </div>
+  </footer>
+
+</body>
+</html>
+
